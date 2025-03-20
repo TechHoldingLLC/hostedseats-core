@@ -41,6 +41,10 @@ export interface ProductDTO {
    * The status of the product.
    */
   status: ProductStatus
+   /**
+   * Whether the product is featured.
+   */
+  is_featured: boolean
   /**
    * The URL of the product's thumbnail.
    */
@@ -685,6 +689,10 @@ export interface FilterableProductProps
    * Search through the products' attributes, such as titles and descriptions, using this search term.
    */
   q?: string
+  /**
+   * Filter products by whether they are featured.
+   */
+  is_featured?: boolean
   /**
    * The status to filter products by
    */
@@ -1460,6 +1468,10 @@ export interface CreateProductDTO {
    */
   title: string
   /**
+   * Whether the product is featured.
+   */
+  is_featured?: boolean
+  /**
    * The subttle of the product.
    */
   subtitle?: string
@@ -1579,6 +1591,10 @@ export interface UpdateProductDTO {
    * The title of the product.
    */
   title?: string
+  /**
+   * Whether the product is featured.
+   */
+  is_featured?: boolean
   /**
    * The subttle of the product.
    */
