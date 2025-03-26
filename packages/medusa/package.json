@@ -99,7 +99,7 @@
     "@medusajs/payment": "2.6.1",
     "@medusajs/payment-stripe": "2.6.1",
     "@medusajs/pricing": "2.6.1",
-    "@medusajs/product": "2.6.1",
+    "@medusajs/product": "../modules/product",
     "@medusajs/promotion": "2.6.1",
     "@medusajs/region": "2.6.1",
     "@medusajs/sales-channel": "2.6.1",
