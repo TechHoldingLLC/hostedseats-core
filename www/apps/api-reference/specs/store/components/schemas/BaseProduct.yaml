@@ -28,6 +28,7 @@ required:
   - created_at
   - updated_at
   - deleted_at
+  - is_featured
 properties:
   collection:
     $ref: ./BaseCollection.yaml
@@ -102,6 +103,10 @@ properties:
     type: boolean
     title: is_giftcard
     description: Whether the product is a gift card.
+  is_featured:
+    type: boolean
+    title: is_featured
+    description: Whether the product is featured.
   thumbnail:
     type: string
     title: thumbnail

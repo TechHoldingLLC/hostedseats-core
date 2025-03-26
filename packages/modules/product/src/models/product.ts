@@ -58,6 +58,7 @@ const Product = model
       pivotTable: "product_category_product",
       mappedBy: "products",
     }),
+    is_featured: model.boolean().default(false)
   })
   .cascades({
     delete: ["variants", "options", "images"],

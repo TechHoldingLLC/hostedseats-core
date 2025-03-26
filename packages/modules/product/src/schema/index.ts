@@ -34,6 +34,7 @@ type Product {
   images: [ProductImage!]!
   discountable: Boolean
   external_id: String
+  is_featured: Boolean!
   created_at: DateTime!
   updated_at: DateTime!
   deleted_at: DateTime
