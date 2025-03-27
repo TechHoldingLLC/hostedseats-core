@@ -30,6 +30,8 @@ const Product = model
     material: model.text().nullable(),
     discountable: model.boolean().default(true),
     external_id: model.text().nullable(),
+    brand: model.text().nullable(),
+    custom_brand: model.text().nullable(),
     metadata: model.json().nullable(),
     variants: model.hasMany(() => ProductVariant, {
       mappedBy: "product",
