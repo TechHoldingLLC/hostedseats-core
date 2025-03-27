@@ -76,6 +76,8 @@ export const defaultAdminProductFields = [
   "updated_at",
   "deleted_at",
   "metadata",
+  "brand",
+  "custom_name",
   "*type",
   "*collection",
   "*options",

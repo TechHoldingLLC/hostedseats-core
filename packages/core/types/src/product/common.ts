@@ -77,6 +77,10 @@ export interface ProductDTO {
    * The material of the product.
    */
   material: string | null
+
+  brand: string | null
+
+  custom_name: string | null
   /**
    * The associated product collection.
    *

@@ -241,7 +241,7 @@ export const CreateProduct = z
     mid_code: z.string().nullish(),
     origin_country: z.string().nullish(),
     material: z.string().nullish(),
-    metadata: z.record(z.unknown()).nullish(),
+    metadata: z.record(z.unknown()).nullish()
   })
   .strict()
 

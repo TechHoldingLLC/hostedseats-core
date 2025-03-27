@@ -1,6 +1,7 @@
 {
   "name": "root",
   "private": true,
+  "packageManager": "yarn@3.2.1",
   "workspaces": {
     "packages": [
       "packages/medusa",
@@ -15,7 +16,8 @@
       "packages/admin/*",
       "packages/design-system/*",
       "packages/generated/*",
-      "integration-tests/**/*"
+      "integration-tests/**/*",
+      "apps/medusa-store7/*"
     ]
   },
   "devDependencies": {
@@ -78,7 +80,6 @@
     "global": "^4.4.0",
     "import-from": "^3.0.0"
   },
-  "packageManager": "yarn@3.2.1",
   "resolutions": {
     "@redocly/cli/react": "^17.0.1",
     "@redocly/cli/react-dom": "^17.0.1",

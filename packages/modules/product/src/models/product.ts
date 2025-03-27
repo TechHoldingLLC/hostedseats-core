@@ -22,8 +22,10 @@ const Product = model
     thumbnail: model.text().nullable(),
     weight: model.text().nullable(),
     length: model.text().nullable(),
+    brand: model.text().nullable(),
     height: model.text().nullable(),
     width: model.text().nullable(),
+    is_featured: model.text().nullable(),
     origin_country: model.text().nullable(),
     hs_code: model.text().nullable(),
     mid_code: model.text().nullable(),
@@ -31,6 +33,7 @@ const Product = model
     discountable: model.boolean().default(true),
     external_id: model.text().nullable(),
     metadata: model.json().nullable(),
+    custom_name:model.text().nullable(),
     variants: model.hasMany(() => ProductVariant, {
       mappedBy: "product",
     }),
