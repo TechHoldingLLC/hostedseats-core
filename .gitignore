@@ -30,3 +30,6 @@ dist/**
 
 # Cache File
 /packages/**/.cache
+
+my-medusa-store/.medusa
+my-medusa-store/.yarn
