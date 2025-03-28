@@ -54,6 +54,7 @@ export const listOptionConfig = {
 export const defaultAdminProductFields = [
   "id",
   "title",
+  "custom_field",
   "subtitle",
   "status",
   "external_id",

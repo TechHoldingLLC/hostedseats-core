@@ -12,6 +12,8 @@ const Product = model
   .define("Product", {
     id: model.id({ prefix: "prod" }).primaryKey(),
     title: model.text().searchable(),
+    custom_field:model.text().searchable().nullable(),
+    custom_field_2:model.text().nullable(),
     handle: model.text(),
     subtitle: model.text().searchable().nullable(),
     description: model.text().searchable().nullable(),

@@ -25,6 +25,8 @@ export interface ProductDTO {
    * The handle of the product. The handle can be used to create slug URL paths.
    */
   handle: string
+
+  custom_field:string | null
   /**
    * The subttle of the product.
    */
