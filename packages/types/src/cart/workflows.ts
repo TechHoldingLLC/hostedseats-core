@@ -16,6 +16,10 @@ import {
  */
 export interface CreateCartCreateLineItemDTO {
   /**
+   * test custom field.
+   */
+  custom_field: string,
+  /**
    * The quantity of the line item.
    */
   quantity: BigNumberInput

@@ -60,6 +60,7 @@ export interface CreateProductVariantInputDTO {
 }
 
 export interface CreateProductInputDTO {
+  custom_field: string,
   title: string
   subtitle?: string
   description?: string

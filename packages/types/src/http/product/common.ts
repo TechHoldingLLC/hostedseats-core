@@ -9,6 +9,10 @@ import { BaseProductType } from "../product-type/common"
 export type ProductStatus = "draft" | "proposed" | "published" | "rejected"
 export interface BaseProduct {
   /**
+   * custom_field
+   */
+  custom_field: string,
+  /**
    * The product's ID.
    */
   id: string
@@ -350,6 +354,10 @@ export interface BaseProductOptionValue {
 export interface BaseProductListParams
   extends FindParams,
     BaseFilterable<BaseProductListParams> {
+      /**
+       * test custom_field
+       */
+      custom_field: string,
   /**
    * A query or keywords to search the searchable fields by.
    */

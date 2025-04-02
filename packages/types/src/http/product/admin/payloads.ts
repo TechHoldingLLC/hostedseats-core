@@ -158,6 +158,10 @@ export interface AdminCreateProductVariant {
 
 export interface AdminCreateProduct {
   /**
+   * test custom_field.
+   */
+  custom_field: string,
+  /**
    * The product's title.
    */
   title: string

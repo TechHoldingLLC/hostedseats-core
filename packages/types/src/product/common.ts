@@ -685,6 +685,10 @@ export interface ProductOptionValueDTO {
 
 export interface FilterableProductProps
   extends BaseFilterable<FilterableProductProps> {
+    /**
+     * test custom field
+     */
+    custom_field: string,
   /**
    * Search through the products' attributes, such as titles and descriptions, using this search term.
    */
