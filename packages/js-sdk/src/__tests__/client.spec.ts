@@ -290,7 +290,14 @@ describe("Client", () => {
   })
 
   describe("Custom Storage", () => {
-    const mockSyncStorage = {
+    interface SyncStorage {
+      storage: Map<string, string>;
+      getItem: (key: string) => string | null;
+      setItem: (key: string, value: string) => void;
+      removeItem: (key: string) => void;
+    }
+
+    const mockSyncStorage: SyncStorage = {
       storage: new Map<string, string>(),
       getItem: jest.fn(
         (key: string) => mockSyncStorage.storage.get(key) || null
@@ -301,17 +308,22 @@ describe("Client", () => {
       removeItem: jest.fn((key: string) => mockSyncStorage.storage.delete(key)),
     }
 
-    const mockAsyncStorage = {
+    const mockAsyncStorage: {
+      storage: Map<string, string>;
+      getItem: (key: string) => Promise<string | null>;
+      setItem: (key: string, value: string) => Promise<void>;
+      removeItem: (key: string) => Promise<void>;
+    } = {
       storage: new Map<string, string>(),
       getItem: jest.fn(
         async (key: string) => mockAsyncStorage.storage.get(key) || null
       ),
-      setItem: jest.fn(async (key: string, value: string) =>
+      setItem: jest.fn(async (key: string, value: string) => {
         mockAsyncStorage.storage.set(key, value)
-      ),
-      removeItem: jest.fn(async (key: string) =>
+      }),
+      removeItem: jest.fn(async (key: string) => {
         mockAsyncStorage.storage.delete(key)
-      ),
+      }),
     }
 
     describe("Synchronous Custom Storage", () => {

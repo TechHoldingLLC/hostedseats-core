@@ -72,7 +72,7 @@ export interface IWorkflowEngineService extends IModuleService {
     workflowId: string,
     options?: WorkflowOrchestratorRunDTO,
     sharedContext?: Context
-  )
+  ): Promise<void>
 
   getRunningTransaction(
     workflowId: string,
@@ -91,7 +91,7 @@ export interface IWorkflowEngineService extends IModuleService {
       options?: Record<string, any>
     },
     sharedContext?: Context
-  )
+  ): Promise<void>
 
   setStepFailure(
     {
@@ -104,7 +104,7 @@ export interface IWorkflowEngineService extends IModuleService {
       options?: Record<string, any>
     },
     sharedContext?: Context
-  )
+  ): Promise<void>
 
   subscribe(
     args: {
@@ -123,11 +123,11 @@ export interface IWorkflowEngineService extends IModuleService {
       subscriberOrId: string | Function
     },
     sharedContext?: Context
-  )
+  ): Promise<void>
 
   cancel(
     workflowId: string,
     options: WorkflowOrchestratorCancelOptionsDTO,
     sharedContext?: Context
-  )
+  ): Promise<void>
 }

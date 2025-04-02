@@ -13,7 +13,13 @@
     "preserveWatchOutput": true,
     "skipLibCheck": true,
     "strict": true,
-    "checkJs": false
+    "checkJs": false,
+
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "noEmit": false,
+    "module": "ESNext",
+    "target": "ESNext"
   },
   "include": ["src"],
   "exclude": ["dist", "node_modules"]

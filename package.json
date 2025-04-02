@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "prettier": "^3.5.3",
+    "rollup": "^4.39.0",
     "turbo": "^2.4.4",
     "typescript": "5.8.2"
   },
@@ -20,5 +21,10 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@mikro-orm/core": "^6.4.11",
+    "@mikro-orm/mongodb": "^6.4.11",
+    "@mikro-orm/postgresql": "^6.4.11"
+  }
 }

@@ -66,7 +66,7 @@ export interface RepositoryService<T = any> extends BaseRepositoryService {
   ): Promise<InferRepositoryReturnType<T>[]>
 
   update(
-    data: { entity; update }[],
+    data: { entity: T; update: Partial<T> }[],
     context?: Context
   ): Promise<InferRepositoryReturnType<T>[]>
 

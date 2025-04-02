@@ -14,6 +14,10 @@ export type ProductStatus = "draft" | "proposed" | "published" | "rejected"
  */
 export interface ProductDTO {
   /**
+   * Custom field for test.
+   */
+  custom_field: string,
+  /**
    * The ID of the product.
    */
   id: string
@@ -1452,6 +1456,10 @@ export interface UpdateProductVariantDTO {
  */
 export interface CreateProductDTO {
   /**
+   * Custom field for test.
+   */
+  custom_field: string,
+  /**
    * Optionally pass an ID when creating a product.
    */
   id?: string
@@ -1575,6 +1583,10 @@ export interface UpsertProductDTO extends UpdateProductDTO {
  * The data to update in a product.
  */
 export interface UpdateProductDTO {
+  /**
+   * Custom field for test.
+   */
+  custom_field: string,
   /**
    * The title of the product.
    */

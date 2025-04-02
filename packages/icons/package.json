@@ -19,7 +19,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "yarn build:bundles && yarn build:types",
+    "build": "npm run build:bundles && npm run build:types",
     "build:bundles": "rollup -c ./rollup.config.mjs",
     "build:types": "tsc --emitDeclarationOnly",
     "test": "vitest --run",

@@ -1,3 +1,21 @@
 {
-  "extends": "../../../_tsconfig.base.json"
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@medusajs/*": ["packages/*"]
+    },
+    "rootDir": "./src",   // Ensures only `src/` is compiled
+    "outDir": "./dist",   // Places compiled files inside `dist/`
+    "declaration": true,  // Generates .d.ts files
+    "declarationMap": true, 
+    "noEmit": false       // Ensures TypeScript actually emits compiled files
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }

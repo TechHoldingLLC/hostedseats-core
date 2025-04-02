@@ -48,7 +48,7 @@ const Toaster = ({
       position={position}
       gap={gap}
       offset={offset}
-      cn={clx}
+      className={clx()}
       toastOptions={{
         duration,
       }}
