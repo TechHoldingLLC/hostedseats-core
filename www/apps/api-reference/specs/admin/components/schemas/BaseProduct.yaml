@@ -8,6 +8,7 @@ required:
   - subtitle
   - description
   - is_giftcard
+  - is_featured
   - status
   - thumbnail
   - width
@@ -102,6 +103,10 @@ properties:
     type: boolean
     title: is_giftcard
     description: Whether the product is a gift card.
+  is_featured:
+    type: boolean
+    title: is_featured
+    description: Whether the product is featured.
   thumbnail:
     type: string
     title: thumbnail

@@ -60,6 +60,7 @@ export const defaultAdminProductFields = [
   "description",
   "handle",
   "is_giftcard",
+  "is_featured",
   "discountable",
   "thumbnail",
   "collection_id",

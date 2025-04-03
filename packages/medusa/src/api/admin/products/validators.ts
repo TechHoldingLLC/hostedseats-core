@@ -219,6 +219,7 @@ export const CreateProduct = z
     subtitle: z.string().nullish(),
     description: z.string().nullish(),
     is_giftcard: booleanString().optional().default(false),
+    is_featured: booleanString().optional().default(false),
     discountable: booleanString().optional().default(true),
     images: z.array(z.object({ url: z.string() })).optional(),
     thumbnail: z.string().nullish(),

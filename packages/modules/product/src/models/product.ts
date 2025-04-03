@@ -16,6 +16,7 @@ const Product = model
     subtitle: model.text().searchable().nullable(),
     description: model.text().searchable().nullable(),
     is_giftcard: model.boolean().default(false),
+    is_featured: model.boolean().default(false),
     status: model
       .enum(ProductUtils.ProductStatus)
       .default(ProductUtils.ProductStatus.DRAFT),

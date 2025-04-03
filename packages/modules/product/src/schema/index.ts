@@ -13,6 +13,7 @@ type Product {
   subtitle: String
   description: String
   is_giftcard: Boolean!
+  is_featured: Boolean!
   status: ProductStatus!
   thumbnail: String
   width: Float
