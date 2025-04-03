@@ -33,6 +33,10 @@ export interface BaseProduct {
    */
   is_giftcard: boolean
   /**
+   * Whether the product is featured.
+   */
+  is_featured: boolean
+  /**
    * The product's status.
    */
   status: ProductStatus
