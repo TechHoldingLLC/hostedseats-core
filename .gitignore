@@ -2,7 +2,7 @@
 node_modules
 *yarn-error.log
 .pnp.*
-.yarn/*
+**/.yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
@@ -30,3 +30,8 @@ dist/**
 
 # Cache File
 /packages/**/.cache
+
+uploads
+coverage
+apps/store/medusa-db.sql
+.medusa
