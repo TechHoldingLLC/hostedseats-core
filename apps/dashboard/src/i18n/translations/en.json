@@ -544,6 +544,10 @@
       "subtitle": {
         "label": "Subtitle"
       },
+      "is_featured": {
+        "label": "Featured",
+        "tooltip": "Featured products will be displayed on the homepage and in search results."
+      },
       "handle": {
         "label": "Handle",
         "tooltip": "The handle is used to reference the product in your storefront. If not specified, the handle will be generated from the product title."
@@ -2856,6 +2860,7 @@
     "discountable": "Discountable",
     "handle": "Handle",
     "subtitle": "Subtitle",
+    "is_featured": "Featured",
     "by": "By",
     "item": "Item",
     "qty": "qty.",
